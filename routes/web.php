@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PoultryController;
 use App\Http\Controllers\AppleController;
 use App\Http\Controllers\CatageriousController;
+use App\Http\Controllers\ProductController;
 
 
 /*
@@ -22,7 +23,8 @@ Route::get('/', function () {
 });
 
 Route::get('/list/{name}',[PoultryController::class,'productlist']);
-Route::get('/add/{id}',[PoultryController::class,'addproduct']);
+Route::get('/product',[ProductController::class,'product']);
+Route::get('/edit/{id}',[PoultryController::class,'addproduct']);
 Route::get('/update/{id}',[PoultryController::class,'updateproduct']);
 
 Route::get('/catg/{id}',[CatageriousController::class,'catg'])->name('catg.product');
