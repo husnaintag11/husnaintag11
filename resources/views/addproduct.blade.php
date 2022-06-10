@@ -12,5 +12,6 @@
     <b><h2>THIS PRODUCT IS ADD SUCESSFULL</h2></b>
     <h1>{{$nm}}</h1>
     
+    
 </body>
 </html>
